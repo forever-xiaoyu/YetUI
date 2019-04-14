@@ -1,4 +1,8 @@
-import demo from './demo.vue'
+import Demo from './demo.vue'
 import './demo.scss'
 
-export default demo
+Demo.install = function (Vue) {
+  Vue.component(Demo.name, Demo)
+}
+
+export default Demo

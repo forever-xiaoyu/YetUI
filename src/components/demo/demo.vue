@@ -1,9 +1,11 @@
 <template>
-  <div class="demo"></div>
+  <div class="demo">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "demo"
-  }
+export default {
+  name: 'demo'
+}
 </script>
