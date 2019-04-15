@@ -4,9 +4,9 @@ const components = {
   Demo
 }
 
-Object.keys(components).forEach(key => {
-  require('./' + key.toLowerCase() + '/' + key.toLowerCase() + '.scss')
-})
+// Object.keys(components).forEach(key => {
+//   require('./' + key.toLowerCase() + '/' + key.toLowerCase() + '.scss')
+// })
 
 const install = function (Vue) {
   if (install.installed) return

@@ -9,3 +9,9 @@ export default {
   name: 'demo'
 }
 </script>
+
+<style>
+.demo {
+  width: 100px;
+}
+</style>
