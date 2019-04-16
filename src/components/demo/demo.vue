@@ -1,17 +1,17 @@
 <template>
-  <div class="demo">
+  <div class="yet-demo">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'demo'
+  name: 'yetDemo'
 }
 </script>
 
 <style>
-.demo {
+.yet-demo {
   width: 100px;
 }
 </style>

@@ -1,16 +1,28 @@
+import { packageList as pkgList } from './config.json'
 import Demo from './demo'
+import Skeleton from './skeleton'
 
-const components = {
-  Demo
+const packages = {
+  Demo,
+  Skeleton
 }
 
-// Object.keys(components).forEach(key => {
-//   require('./' + key.toLowerCase() + '/' + key.toLowerCase() + '.scss')
-// })
+const components = {}
+
+pkgList.map(item => {
+  const pkg = packages[item.name]
+  if (!pkg) return
+  if (pkg.name) {
+    components[pkg.name] = pkg
+  } else {
+    for (let n in pkg) {
+      components[n] = pkg[n]
+    }
+  }
+})
 
 const install = function (Vue) {
   if (install.installed) return
-  // components.map(component => Vue.component(component.name, component))
   Object.keys(components).forEach(key => {
     Vue.component(components[key].name, components[key])
   })
