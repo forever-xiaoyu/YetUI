@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-
+    <yet-demo></yet-demo>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
+   name: 'app'
 }
 </script>
 
@@ -17,7 +17,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: #dddddd;
-  margin-top: 60px;
 }
 </style>
