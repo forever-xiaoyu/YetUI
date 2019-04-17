@@ -51,19 +51,19 @@
 ### 纵向排列
 
 ```html
-<column>
-  <skeleton-square 
+<yet-skeleton-column>
+  <yet-skeleton-square 
     width="275px" 
     :count="2" 
     margin="5px 10px 5px 10px"
   >
-  </skeleton-square>
-  <skeleton-square 
+  </yet-skeleton-square>
+  <yet-skeleton-square 
     width="100px" 
     margin="5px 10px 5px 10px"
   >
-  </skeleton-square>
-</column>
+  </yet-skeleton-square>
+</yet-skeleton-column>
 ```
 
 ## 常用布局
