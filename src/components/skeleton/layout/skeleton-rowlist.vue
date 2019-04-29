@@ -20,35 +20,35 @@
 </template>
 
 <script>
-  export default {
-    name: "yet-skeleton-rowlist",
-    props: {
-      padding: {
-        type: String,
-        default: '5px'
-      },
-      rowCount: {
-        type: [String, Number],
-        default: '1'
-      },
-      diameter: {
-        type: [String],
-        default: '60px'
-      },
-      squareWidth: {
-        type: [String],
-        default: '200px'
-      },
-      squareMargin: {
-        type: [String],
-        default: '4px 0 4px 5px'
-      },
-      squareCount: {
-        type: [String, Number],
-        default: '3'
-      }
+export default {
+  name: 'yet-skeleton-rowlist',
+  props: {
+    padding: {
+      type: String,
+      default: '5px'
+    },
+    rowCount: {
+      type: [String, Number],
+      default: '1'
+    },
+    diameter: {
+      type: [String],
+      default: '60px'
+    },
+    squareWidth: {
+      type: [String],
+      default: '200px'
+    },
+    squareMargin: {
+      type: [String],
+      default: '4px 0 4px 5px'
+    },
+    squareCount: {
+      type: [String, Number],
+      default: '3'
     }
   }
+}
 </script>
 
 <style scoped>
