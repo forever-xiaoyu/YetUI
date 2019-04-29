@@ -1,0 +1,55 @@
+$bgWidth: 8px;
+$bgHeight: 2px;
+
+.yet-stepper {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  .stepper-add {
+    width: 21px;
+    height: 22px;
+    background: url('../../assets/stepper-add.png') no-repeat center center / $bgWidth $bgWidth;
+    &--init {
+      width: 28px;
+      height: 22px;
+      background: url('../../assets/stepper-add.png') #F6F6F6 no-repeat center center / $bgWidth $bgWidth;
+    }
+    &--limit {
+      width: 21px;
+      height: 22px;
+      background: url('../../assets/stepper-add-limit.png') no-repeat center center / $bgWidth $bgWidth;
+    }
+  }
+  .stepper-reduce {
+    width: 21px;
+    height: 22px;
+    background: url('../../assets/stepper-reduce.png') no-repeat center center / $bgWidth $bgHeight;
+    &--init {
+      width: 21px;
+      height: 22px;
+      background: url('../../assets/stepper-reduce-limit.png') no-repeat center center / $bgWidth $bgHeight;
+    }
+  }
+  .stepper-number {
+    width: 38px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: #F6F6F6;
+  }
+}
+
+.yet-add {
+  width: 7px;
+  height: 7px;
+  display: block;
+  background: red;
+  border-radius: 50%;
+  position: fixed;
+  -webkit-transition: left .4s linear, top .4s cubic-bezier(.58, -.42, 1, .65);
+  transition: left .4s linear, top .4s cubic-bezier(.58, -.42, 1, .65);
+  z-index: 999999;
+}

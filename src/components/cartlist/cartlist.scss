@@ -1,0 +1,104 @@
+@mixin linecamp($value) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $value;
+}
+
+.yet-cartlist {
+  &__masker {
+    content: '';
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.30);
+  }
+  .cartlist-content {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 150;
+    transition: all .6s;
+    transform: translateY(0);
+    &--hide {
+      transform: translateY(100%);
+    }
+    .cartlist-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      margin: 0 15px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #F0F0F0;
+      &__title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        background: #F6F6F6;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__titext {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2E2D2D;
+      }
+      &__rmtext {
+        font-size: 18px;
+        color: #238EFF;
+      }
+      &__container {
+        width: 100%;
+        overflow-y: auto;
+      }
+      &__img {
+        width: 65px;
+        height: 65px;
+        background-size: 100%;
+        position: relative;
+        img {
+          width: 65px;
+          height: 65px;
+        }
+      }
+      .cartlist-itemright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        margin-left: 16px;
+        .cartlist-itemright__text {
+          line-height: 16px;
+          font-size: 14px;
+          color: #232326;
+          margin-bottom: 9px;
+          text-align: left;
+          @include linecamp(2);
+        }
+        .cartlistright-goods {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          .cartlistright-goods__price {
+            font-size: 14px;
+            //font-weight: bold;
+            color: #F0210B;
+            &--font {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,20 @@
       "type": "component",
       "desc": "骨架屏",
       "author": "yuce"
+    },
+    {
+      "name": "CartList",
+      "version": "1.0.0",
+      "type": "component",
+      "desc": "购物车",
+      "author": "yuce"
+    },
+    {
+      "name": "Stepper",
+      "version": "1.0.0",
+      "type": "component",
+      "desc": "步进器",
+      "author": "yuce"
     }
   ]
 }

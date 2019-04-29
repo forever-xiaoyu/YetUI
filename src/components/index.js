@@ -1,10 +1,14 @@
 import { packageList as pkgList } from './config.json'
 import Demo from './demo'
+import CartList from './cartlist'
 import Skeleton from './skeleton'
+import Stepper from './stepper'
 
 const packages = {
   Demo,
-  Skeleton
+  Skeleton,
+  CartList,
+  Stepper
 }
 
 const components = {}
