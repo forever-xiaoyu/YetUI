@@ -1,6 +1,6 @@
 {
   "name": "yet-ui",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Vue-based component library",
   "main": "lib/YetUI.umd.min.js",
   "keyword": "YetUI yetui yet-ui Yet-UI",
