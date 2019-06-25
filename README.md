@@ -6,6 +6,8 @@
 <img src="https://img.shields.io/badge/vue-2.6.10-red.svg" alt="vue version">
 <img src="https://img.shields.io/badge/YetUI-0.3.0-orange.svg" alt="YetUI version">
 
+### [document][3]
+
 > 一套基于 Vue.js 的移动端轻量级组件库。
 
 ### 移动端支持
@@ -26,3 +28,4 @@
 
 [1]: https://cn.vuejs.org/
 [2]: https://cli.vuejs.org/guide/
+[3]: https://yc609.cn/YetUI
