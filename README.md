@@ -1,35 +1,28 @@
-# yet-ui
+# YetUI
 
-## Project setup
+<br/>
 
-```bash
-npm install
-```
+<img src="https://img.shields.io/badge/npm-6.4.1-blue.svg" alt="npm version">
+<img src="https://img.shields.io/badge/vue-2.6.10-red.svg" alt="vue version">
+<img src="https://img.shields.io/badge/YetUI-0.3.0-orange.svg" alt="YetUI version">
 
-### Compiles and hot-reloads for development
+> 一套基于 Vue.js 的移动端轻量级组件库。
 
-```bash
-npm run serve
-```
+### 移动端支持
+----
 
-### Compiles and minifies for production
+* Android 4.2+
+* iOS 7.0+
 
-```bash
-npm run build
-```
+### 友情链接
+----
 
-### Run your tests
+[Vue 官方文档][1] <br/>
+[Vue-CLI 官方文档][2]
 
-```bash
-npm run test
-```
+### 开源协议
+----
+本项目基于 MIT 协议
 
-### Lints and fixes files
-
-```bash
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[1]: https://cn.vuejs.org/
+[2]: https://cli.vuejs.org/guide/
